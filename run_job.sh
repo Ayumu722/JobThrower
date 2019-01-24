@@ -1,6 +1,7 @@
 #!/bin/sh
 
-job_dir="/home/denbo3/ayumu/JobThrower/job" # Location of Subject folders (named by subjectID)
+# job_dir="/home/denbo3/ayumu/JobThrower/job" # Location of Subject folders (named by subjectID)
+job_dir=$1 # Location of Subject folders (named by subjectID)
 username="ayumu"
 job_files=$(ls -U1 $job_dir)
 job_num=$(ls -U1 $job_dir | wc -l)
