@@ -39,6 +39,7 @@ done
 
 echo Now job throw
 for job in ${job_files[@]}; do
+sleep 10
 current_job_num=$(qstat | grep ${username} | wc -l)
 find_usenode
 while test  ${COUNT_PRE} -eq ${CORENUM} -o ${current_job_num} -eq ${MAXJOB}; do
